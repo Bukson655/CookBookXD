@@ -1,0 +1,27 @@
+.header, footer {
+    display: block;
+    text-align: center;
+    background-color: blanchedalmond;
+    max-width: 100%;
+    padding: 10px 10px 10px 10px;
+}
+
+.content, .form {
+    padding: 30px 30px 30px 30px;
+    max-width: 100%;
+}
+
+h2, h3, h4, p, .cat_picture {
+    text-align: center;
+}
+
+
+#like-button, #category-button {
+    display: block;
+    text-align: center;
+
+}
+
+.body {
+    background-color: blanchedalmond;
+}

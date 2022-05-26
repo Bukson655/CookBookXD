@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pl" xmlns:th="http://www.thymeleaf.org">
+  <head th:fragment="head">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" th:href="@{/styles.css}">
+    <title th:text="${title}">Cookbook XD v1.0</title>
+  </head>
+  <body>
+    <div th:fragment="simple-menu" class="header" id="top">
+      <a th:fragment="logo" th:href="@{/}"><img th:src="@{/pics/logo_cookbook.png}" height="150" alt="Cookbook XD logo"></a>
+      <div class="menu">
+        <a th:href="@{/add}"><button type="button" class="btn btn-dark">Dodaj przepis</button></a>
+        <a th:href="@{/recipes}"><button type="button" class="btn btn-dark">Przepisy</button></a>
+        <a th:href="@{/categories}"><button type="button" class="btn btn-dark">Kategorie</button></a>
+      </div>
+    </div>
+    <footer th:fragment="footer" class="footer">
+      <p>&reg;2022 All rights reserved - Cookbook XD</p>
+      <a th:href="@{#top}"><button type="button" class="btn btn-dark">Przewiń do góry</button></a>
+    </footer>
+  </body>
+</html>
